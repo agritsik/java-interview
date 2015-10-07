@@ -37,7 +37,7 @@
 
 *Иерархия интерфейсов Java Collections Framework*
 
-![Java Collections Hierarchy](https://github.com/krasilnikovdmtr/java-interview/blob/master/images/Core%20Interface%20Hierarchy%20-%20New%20Page.png)
+![Java Collections Hierarchy](https://github.com/JI-user/java-interview/blob/master/images/Core%20Interface%20Hierarchy%20-%20New%20Page.png?raw=true)
 
 Все интерфейсы являются типизированными, к примеру:
 
@@ -58,7 +58,7 @@ public interface Collection<E> extends Iterable<E>{
 В интерфейсе `java.util.Collection<E>` определены основные методы для манипуляции с данными, такие как вставка
 (`add(), addAll()`), удаление (`remove(), removeAll(), clear()`), поиск (`contains()`) и т.д.
 
-![Java Collections Hierarchy](https://github.com/krasilnikovdmtr/java-interview/blob/master/images/Collection%20Interface%20-%20New%20Page.png?raw=true)
+![Java Collections Hierarchy](https://github.com/JI-user/java-interview/blob/master/images/Collection%20Interface%20-%20New%20Page.png?raw=true)
 
 Интерфейс *Collection* реализует интерфейс *Iterable*, у которого есть только один метод:
 
@@ -75,7 +75,7 @@ public interface Collection<E> extends Iterable<E>{
 Список может содержать повторяющиеся, а так же null элементы. Элементы списка пронумерованы, начиная с нуля и к
 конкретному элементу можно обратиться по целочисленному индексу.
 
-![List Interface](https://github.com/krasilnikovdmtr/java-interview/blob/master/images/List%20Interface%20-%20New%20Page.png?raw=true)
+![List Interface](https://github.com/JI-user/java-interview/blob/master/images/List%20Interface%20-%20New%20Page.png?raw=true)
 
 Интерфейс *List* является наследником интерфейса *Collection*, поэтому содержит все его методы и добавляет к ним несколько своих:
 
@@ -188,7 +188,7 @@ Attempts to allocate larger arrays may result in java.lang.OutOfMemoryError.*
 структуру двусвязного списка. Позволяет добавлять любые элементы в том числе и *null*. Доступ к произвольному элементу
 осуществляется за линейное время - O(n), но доступ к первому и последнему элементу списка всегда осуществляется за константное время O(1).
 
-![Java Collections Hierarchy](https://github.com/krasilnikovdmtr/java-interview/blob/master/images/Structure%20of%20linkedlist%20-%20New%20Page.png?raw=true)
+![Java Collections Hierarchy](https://github.com/JI-user/java-interview/blob/master/images/Structure%20of%20linkedlist%20-%20New%20Page.png?raw=true)
 
 *Cсылки постоянно хранятся на первый и последний элемент,
 так что добавление элемента в конец списка вовсе не значит, что придется перебирать весь список в поисках
@@ -389,7 +389,7 @@ return x;
 Более формально, коллекция не может содержать пары элементов *e1* и *e2* таких, чтобы условие `e1.equals(e2)` было *true*
 и не более одного *null* элемента.
 
-![Java Collections Hierarchy](https://github.com/krasilnikovdmtr/java-interview/blob/master/images/Set%20Interface%20-%20New%20Page.png?raw=true)
+![Java Collections Hierarchy](https://github.com/JI-user/java-interview/blob/master/images/Set%20Interface%20-%20New%20Page.png?raw=true)
 
 Интерфейс *Set* реализует интерфейс *Collection* и в отличии от интерфейса *List* не дополняет никакими методами.
 Разные реализации *Set* используют разный порядок хранения элементов.
@@ -576,7 +576,7 @@ System.out.println(numbers); // [1]
 Обычно, очередь не позволяет добавлять *null* элементы, однако в некоторых реализация интерфейса *Queue* есть возможность
 добавление *null* элементов (например, *LinkedList*). Также не разрешается добавлять элементы, которые не можно сравнить с помощью класса *Comparator*.
 
-![Java Collections Hierarchy](https://github.com/krasilnikovdmtr/java-interview/blob/master/images/Queue%20Interface%20-%20New%20Page.png?raw=true)
+![Java Collections Hierarchy](https://github.com/JI-user/java-interview/blob/master/images/Queue%20Interface%20-%20New%20Page.png?raw=true)
 
 Обычно, очередь (но необязательно) строится по принципу *FIFO (First-In-First-Out)* - соответственно извлечение элемента
 осуществляется с начала очереди, вставка элемента - в конец очереди.
@@ -648,7 +648,7 @@ E remove();
 
 `java.util.Map<K, V>` так же как и `java.util.Collection<E>` является базовым интерфейсом фреймворка **Java Collections**.
 
-![Java Collections Hierarchy](https://github.com/krasilnikovdmtr/java-interview/blob/master/images/Map%20Interface%20-%20New%20Page.png?raw=true)
+![Java Collections Hierarchy](https://github.com/JI-user/java-interview/blob/master/images/Map%20Interface%20-%20New%20Page.png?raw=true)
 
 Интерфейс `java.utils.Map` соотносит уникальные ключи со значениями. Ключ - это объект, который используется для последующего
 извлечения данных.
@@ -769,7 +769,7 @@ static class Node<K,V> implements Map.Entry<K,V> {
 }
 ```
 
-![How hashmap works internally](https://github.com/krasilnikovdmtr/java-interview/blob/master/images/How%20hashmap%20works%20internally%20-%20New%20Page.png?raw=true)
+![How hashmap works internally](https://github.com/JI-user/java-interview/blob/master/images/How%20hashmap%20works%20internally%20-%20New%20Page.png?raw=true)
 
 Возникает вопрос, в какую ячейку массива *table* должен быть добавлен объект типа `Node<K, V>`.
 Номер ячейки определяется на основании хэш-кода ключа, добавляемого элемента. Сначало высчитывается хэш-код ключа, затем
@@ -1101,7 +1101,7 @@ while (iter.hasNext()) {
 Важно знать, что *ListIterator* не хранит текущий элемент при итерации. В отличии от этого он указывает на положение между
 двумя элементами. Между элементом, который будет возвращен при вызове метода `E previous()` и элементом `E next()`
 
-![How ListIterator works](https://github.com/krasilnikovdmtr/java-interview/blob/master/images/How%20ListIterator%20works%20-%20New%20Page.png?raw=true)
+![How ListIterator works](https://github.com/JI-user/java-interview/blob/master/images/How%20ListIterator%20works%20-%20New%20Page.png?raw=true)
 
 *^* - указывает на положение иетартора
 
